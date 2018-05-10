@@ -1,11 +1,16 @@
 package main
 
 import (
+	"fmt"
+)
+
+import (
 	"github.com/jotingen/go-horizons/horizons"
 )
 
 func main() {
-	h := &horizons.Horizons{}
+	h, _ := horizons.New()
 
-	h.Call()
+	fmt.Printf("%+v\n", h)
+	h.Dial()
 }
