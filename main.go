@@ -10,7 +10,7 @@ import (
 
 func main() {
 	h, _ := horizons.New()
-
 	fmt.Printf("%+v\n", h)
+
 	h.Dial()
 }
