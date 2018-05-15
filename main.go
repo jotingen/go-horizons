@@ -10,7 +10,9 @@ import (
 
 func main() {
 	h, _ := horizons.New()
-	fmt.Printf("%+v\n", h)
 
-	h.Dial()
+	list := h.MajorBodyList()
+	for _, body := range list {
+		fmt.Printf("%+v\n", body)
+	}
 }
